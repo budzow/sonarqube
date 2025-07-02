@@ -33,6 +33,6 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_SCANNER_JAVA_OPTS: "-Xmx4g"
+          SONAR_SCANNER_JAVA_OPTS: "-Xmx5g"
 #        run: ./gradlew build sonar --info
         run: ./gradlew build sonar --info -x test -Dsonar.branch.name=1g-5g-all-rules
