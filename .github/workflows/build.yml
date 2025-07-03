@@ -34,5 +34,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_SCANNER_JAVA_OPTS: "-Xmx5g"
-#        run: ./gradlew build sonar --info
-        run: ./gradlew build sonar --debug -x test -Dsonar.branch.name=2g-5g-Sonar-Way-QG
+        run: ./gradlew build sonar --debug
+#        run: ./gradlew build sonar --debug -x test -Dsonar.branch.name=2g-5g-Sonar-Way-QG
